@@ -24,7 +24,7 @@ class Items extends React.Component {
   render() {
     const { done: doneHeading } = this.props;
     const { items } = this.state;
-    const heading = doneHeading ? "Completed" : "Todo";
+    const heading = doneHeading ? "Completed" : "Lista";
 
     if (items === null || items.length === 0) {
       return null;
@@ -78,7 +78,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.heading}>SQLite Example</Text>
+        <Text style={styles.heading}>Ambiente Coletivo</Text>
         <View style={styles.flexRow}>
           <TextInput
             onChangeText={text => this.setState({ text })}
@@ -86,7 +86,7 @@ export default class App extends React.Component {
               this.add(this.state.text);
               this.setState({ text: null });
             }}
-            placeholder="what do you need to do?"
+            placeholder="Digite o que você quer salvar"
             style={styles.input}
             value={this.state.text}
           />
