@@ -20,4 +20,4 @@ You can also see this code in action **right in your browser** via [this snack](
 
 #### Screenshot
 
-<img src="screenshots/2.png?raw=true" width="440" />
+<img src="screenshots/2.jpeg?raw=true" width="440" />
